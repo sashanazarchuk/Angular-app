@@ -1,0 +1,37 @@
+.no-order {
+    text-align: center;
+    font-size: 35px;
+}
+
+.order-block {
+    text-align: center;
+    font-size: 20px;
+}
+
+.not-found {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order {
+    margin: 2%;
+    padding: 2%;
+    border-radius: 10px;
+    background-color: lightgreen;
+}
+
+.custom {
+    margin: 5%;
+    align-self: center;
+    font-size: 20px;
+}
+
+.main-container{
+    display: flex;
+    justify-content:space-between;
+    width: 60%;
+}
+.order-container{
+    display: inline-block;
+}

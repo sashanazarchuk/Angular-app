@@ -1,0 +1,47 @@
+<div class="main-container">
+    <div class="order-container">
+
+        <input type="text" class="p-inputtext-sm custom" [(ngModel)]="currentItem.name" placeholder="Customer"
+            pInputText />
+
+        <div class="custom">
+            <label>Order Date</label>
+            <p-calendar [(ngModel)]="currentItem.date" [showIcon]="true" inputId="icon"></p-calendar>
+        </div>
+
+        <div class="custom" *ngFor="let p of currentItem.products">
+            <input type="text" [(ngModel)]="p.name" placeholder="Product Name" pInputText>
+            <input type="number" [(ngModel)]="p.price" pInputText>
+        </div>
+
+        <div class="custom">
+            <p-checkbox [(ngModel)]="currentItem.isDelivered" [binary]="true" inputId="binary"></p-checkbox>
+            <label> Is delivered</label>
+        </div>
+
+        <div class="custom">
+            <p-button (click)="create()" label="Submit" icon="pi pi-check" iconPos="right"></p-button>
+        </div>
+
+
+    </div>
+
+    <div class="order-container">
+        <div *ngIf="!orders || orders.length==0">
+            <p class="no-order">No orders</p>
+            <img class="not-found" src="https://media.tenor.com/kVrGzZGZnUUAAAAM/pulp-fiction-wtf.gif" alt="not found"
+                width="300px">
+        </div>
+        <div *ngFor="let order of orders" class="order-block" [class.order.isDelivered]="order.isDelivered"
+            (click)="done(order)" (dblclick)="remove(order)">
+            <h3>{{order.name}}</h3>
+            <p>{{order.date|date}}</p>
+            <div class="products-block">
+                <div *ngFor="let product of order.products">
+                    <p>{{product.name}} - {{product.price}} $</p>
+                </div>
+            </div>
+            <p>Delivered: {{order.isDelivered?"Yes":"No"}}</p>
+        </div>
+    </div>
+</div>
