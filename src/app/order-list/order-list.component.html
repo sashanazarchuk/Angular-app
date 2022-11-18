@@ -5,10 +5,10 @@
             pInputText />
 
         <div class="custom">
-            <label>Order Date</label>
+            <p>Order Date</p>
             <p-calendar [(ngModel)]="currentItem.date" [showIcon]="true" inputId="icon"></p-calendar>
         </div>
-
+       
         <div class="custom" *ngFor="let p of currentItem.products">
             <input type="text" [(ngModel)]="p.name" placeholder="Product Name" pInputText>
             <input type="number" [(ngModel)]="p.price" pInputText>

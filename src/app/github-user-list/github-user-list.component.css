@@ -1,0 +1,48 @@
+.card {
+    margin: 3%;
+    padding: 3%;
+    width: 70%;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid gray;
+    box-shadow: 10px 10px 10px 1px gray;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
+
+.blocks {
+    justify-content: space-between;
+    display: inline-block;
+    width: 45%;
+}
+
+.data {
+    padding: 2%;
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(33, 33, 33);
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.follow {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    align-content: center;
+}
+
+.userdata {
+    font-size: 20px;
+    align-self: center;
+    font-family: sans-serif;
+}

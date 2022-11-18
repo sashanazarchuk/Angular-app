@@ -1,0 +1,28 @@
+<div class="card">
+
+    <div class="blocks">
+        <img src={{userDetail.avatar_url}}>
+        <label><span class="data">Name:</span> <span class="userdata"> {{userDetail.name}}</span></label>
+        <hr>
+        <label><span class="data">Login:</span> <span class="userdata">{{userDetail.login}}</span></label>
+        <hr>
+    </div>
+
+    <div class="blocks">
+        <label><span class="data">URL to github:</span> <span class="userdata">{{userDetail.html_url}}</span></label>
+        <hr>
+        <label><span class="data">Blog: </span> <span class="userdata">{{userDetail.blog}}</span></label>
+        <hr>
+        <label><span class="data">City:</span> <span class="userdata">{{userDetail.location}}</span></label>
+        <hr>
+        <label><span class="data">Email:</span> <span class="userdata">{{userDetail.email}}</span></label>
+        <hr>
+
+        <div class="follow">
+            <label><span class="data">Followers:</span> <span class="userdata">{{userDetail.followers}}</span></label>
+            <label><span class="data">Following</span> <span class="userdata">{{userDetail.following}}</span></label>
+        </div>
+        <hr>
+    </div>
+
+</div>

@@ -1,0 +1,7 @@
+<h1>Search login </h1>
+<div class="container">
+    <form [formGroup]="searchForm" (ngSubmit)="sendUser()">
+        <input class="input" type="text" formControlName="username" pInputText>
+        <p-button type="submit" label="Search" icon="pi pi-search" [disabled]="!this.searchForm.valid"></p-button>
+    </form>
+</div>
