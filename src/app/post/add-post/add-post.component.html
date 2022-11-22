@@ -1,0 +1,30 @@
+<div class="container">
+    <h1>Add new product</h1>
+
+
+    <form [formGroup]="postForm" (ngSubmit)="createPost()">
+
+        <div class=" p-float-label">
+            <input id="float-input" type="text"  required formControlName="product" pInputText>
+            <label for="float-input">Product</label>
+        </div>
+
+        <div class="p-float-label">
+            <p-inputNumber class="grid" id="float-input"  currency="USD" locale="en-US" mode="currency"
+                formControlName="price"></p-inputNumber>
+            <label for="float-input">Price</label>
+        </div>
+
+        <div class="p-float-label">
+            <input id="float-input" type="text" required formControlName="category" pInputText>
+            <label for="float-input">Category</label>
+        </div>
+        <div class="p-float-label">
+            <input id="float-input" type="text" required formControlName="country" pInputText>
+            <label for="float-input">Country</label>
+        </div>
+
+        <p-button class="p-float-label" type="submit" label="Submit" icon="pi pi-check"></p-button>
+
+    </form>
+</div>

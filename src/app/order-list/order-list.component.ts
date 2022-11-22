@@ -13,6 +13,8 @@ export class OrderListComponent {
     isDelivered: false,
     products: [{ name: "", price: 0 }]
   };
+
+
   orders: IOrder[] = order;
   constructor() { }
 

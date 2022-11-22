@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { FormsModule, ReactiveFormsModule, } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { CheckboxModule } from 'primeng/checkbox';
 import { CalendarModule } from 'primeng/calendar';
@@ -12,10 +12,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { GithubUserListComponent } from './github-user-list/github-user-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TabMenuModule } from 'primeng/tabmenu';
-import { TabmenuComponent } from './tabmenu/tabmenu.component';
+import { TabmenuComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
-
-
+import { InputNumberModule } from 'primeng/inputnumber';
+import { AddPostComponent } from './post/add-post/add-post.component';
 
 @NgModule({
   declarations: [
@@ -24,18 +24,21 @@ import { SearchComponent } from './search/search.component';
     GithubUserListComponent,
     TabmenuComponent,
     SearchComponent,
+    AppComponent,
+    AddPostComponent,
   ],
   imports: [
     AppRoutingModule,
     HttpClientModule,
     BrowserModule,
     TabMenuModule,
-    ReactiveFormsModule,
     CheckboxModule,
+    InputNumberModule,
     CalendarModule,
     FormsModule,
     ButtonModule,
     InputTextModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule
 
   ],

@@ -3,13 +3,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { OrderListComponent } from './order-list/order-list.component';
 import { GithubUserListComponent } from './github-user-list/github-user-list.component';
 import { SearchComponent } from './search/search.component';
+import { AddPostComponent } from './post/add-post/add-post.component';
 
 
 const routes: Routes = [
   { path: '', component: OrderListComponent },
   { path: 'orders', component: OrderListComponent },
   { path: 'users/:id', component: GithubUserListComponent },
-  { path: 'search', component: SearchComponent }
+  { path: 'search', component: SearchComponent },
+  { path: 'add-post', component: AddPostComponent }
+
 ];
 
 @NgModule({
